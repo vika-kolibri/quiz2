@@ -1,0 +1,846 @@
+* {
+    padding: 0;
+    margin: 0;  
+}
+
+body {
+    background: url(../img/back.png) no-repeat;
+    height: 1vh;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;   
+    overflow-x: hidden;
+}
+
+.header {
+    margin-top: 20px;
+   
+}
+
+
+.logo p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+.pt-1 {
+    margin-top: 20px;
+}
+
+
+
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;    
+}
+
+.title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.btn { 
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    background: radial-gradient(100% 100% at 50% 100%, #2B96EA 0%, #0021CD 100%);
+    box-shadow: 0px 10px 30px rgba(0, 33, 205, 0.25);    
+    margin-top: 40px; 
+    margin-left: 20px;
+    margin-bottom: 150px;
+}
+
+.w .pt-1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    color: #000000;
+    font-size: 20px;
+    max-width: 450px;  
+}
+
+
+
+/* img- main */
+
+.h {
+    position: relative;
+    bottom: 100px;
+    width: 620px;    
+}
+
+.tel {
+    padding-top: 20px;
+}
+
+.tel a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: radial-gradient(100% 100% at 50% 100%, #2B96EA 0%, #0021CD 100%);    
+}
+
+.bw {
+    font-weight: 700;
+    color:  radial-gradient(100% 100% at 50% 100%, #2B96EA 0%, #0021CD 100%);;
+}
+
+#bg-white {
+    height: 100px;
+    max-width: 1920px;
+    background-color: #FFFFFF;
+}
+
+
+.btn {
+     margin-left: 5px;
+}
+ 
+
+/* quiz */
+
+
+.color {
+    color: #0021CD;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+}
+
+/* checkbox */
+
+
+#lp {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000; 
+    margin-bottom: 0;   
+}
+
+
+.flag {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.label {
+    position: relative; 
+}
+
+
+.checkbox{
+    display: none;
+    cursor: pointer;
+}
+
+
+.border {
+    background: radial-gradient(132.54% 132.54% at 50% 132.54%, #B7F0FD 0%, #FFFFFF 100%);
+    box-shadow: 0px 10px 30px rgba(0, 33, 205, 0.25);
+    border-radius: 37px;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    min-height: 63px;
+    max-width: 754px;   
+}
+
+
+.radius {
+    border: 3px solid #4AECFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 1px 1px rgba(0, 33, 205, 0.25));
+    border-radius: 37px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 21px;
+    top: 17px;
+
+}
+
+.radius::before {
+    content: "";
+    position: absolute;
+    right: 2px;
+    left: 0px;
+    z-index: 2;
+    background: url(../img/check\(2\).png) no-repeat;
+    width: 46px;
+    height: 55px;
+    opacity: 0;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.checkbox:checked+.radius::before {
+    opacity: 1;
+}
+/* checkbox ---end----*/
+
+
+.qwes {
+    position: absolute;
+    right: 22px;
+    top: 14px;
+    cursor: pointer;
+}
+
+
+
+
+.img-back {
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+
+.img-p-bar {
+    padding-top: 80px;
+    width: 442px;
+}
+
+
+
+/* 
+block-qwes --------------*/
+
+#content {
+    position: absolute;
+    left: 675px;
+    bottom: 62px;
+    min-width: 221px;
+    height: 70px;
+    background-color: #FFFFFF;
+    background: radial-gradient(132.54% 132.54% at 50% 132.54%, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 2px 5px rgba(0, 33, 205, 0.25);
+    border-radius: 5px;
+    transition: transition drop 3s;
+}
+
+#content p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    padding: 15px;
+}
+
+#content {
+    display:none;
+}
+
+#qwes:hover #content {
+    display: block;
+    
+}
+
+.back {
+   width: 282px;
+   height: 63px;
+}
+
+
+
+/* thanks */
+
+.fon-test {
+    background: radial-gradient(545.88% 15741.7% at 49.33% 329.38%, #2B96EA 0%, #0021CD 100%);
+    color: #FFFFFF;
+    padding: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+   
+}
+
+#tit1 {
+   
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;    
+}
+
+
+#list-2 {
+    text-align: left;
+}
+
+
+
+#tit2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    min-width: 300px;
+    margin-top: 15px;
+    margin-right: 50px;
+   
+}
+
+.black {
+    font-weight: 700;
+}
+
+#list-2 {
+    margin-left: 100px;
+}
+
+#pt-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.fonm p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    position:relative;
+    top: 430px;
+    right: 60px;
+}
+
+.g {
+    width: 630px; 
+}
+
+
+.title2 {
+    min-width: none;
+}
+#btn-w {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-bottom: 145px;  
+}
+
+#btn1 {
+    margin-bottom: 0;
+}
+
+/* last */
+
+#tit3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+}
+
+#tit4 { 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 47px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#pdf {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    max-width: 368px;
+}
+
+#pdf1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    left: 105px;
+    right: 50px;
+}
+
+#icon:not(:last-child) {
+    padding-right: 30px;
+    
+}
+
+#e-mail {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 10px 30px rgba(0, 33, 205, 0.25);
+    border-radius: 37px;
+    border: 3px solid #0021CD;
+    height: 63px; 
+    display: flex;  
+    justify-content: center;
+}
+
+.mb-3 {
+   display: flex;
+   justify-content: center;
+}
+
+#inp {
+    position: relative;
+    left: 50px;
+    bottom: 155px;
+}
+
+#adress {
+    margin-left: 95px;
+} 
+
+#progress-bar {
+    text-decoration: none;
+    background: none;
+    bottom: 172px;
+    position: relative;    
+}
+
+
+
+.ton {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #000000;
+}
+
+.form-check-label a{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration: none;
+}
+
+
+ 
+#btn-back{
+    width: 189px;
+    position: relative;
+    left: 126px;
+    bottom: 145px;
+}
+
+#btn4 {
+    font-size: 24px; 
+}
+
+
+#exampleCheck1 {
+    border-radius: 1.25em;
+    border: 1px solid #4AECFF;
+    filter: drop-shadow(0px 0.32353px 0.32353px rgba(0, 33, 205, 0.25));
+}
+
+#inp {
+    display: flex;
+    justify-content: center;
+}
+
+.title-one {
+    margin-top: 100px;
+}
+
+.footguiz {
+    margin-top: 200px;
+}
+
+
+.foot-last {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+body {
+    background: url(../img/Image\ \(7\).png) no-repeat;
+     
+}
+ 
+#fonm {
+    display: none;
+}
+.mail {
+    margin-left:0;
+}
+
+#inp {
+    margin-left: 120px;
+}
+
+.img-p-bar {
+    position: relative;
+    bottom: 40px;
+    left: 95px;
+    width: 300px;
+}
+
+#btn-back{
+    width: 189px;
+    position: relative;
+    left: 127px;
+    bottom: 81px;
+}
+
+.img-back {
+    position: relative;
+    bottom: 88px;
+    left: 131px;
+}
+
+.quiz {
+    margin-top: 50px;
+}
+
+/* thanks--- */
+
+
+.fon-test p{
+    font-size: 16px;
+}
+
+#tit1 h1,
+#tit2 h3{
+    text-align:center;
+    font-size: 20px;
+    line-height:26px;
+}
+
+.btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bg-white {
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #FFFFFF;
+    
+}
+
+.g {
+    padding-left: 40px;
+    width: 400px;
+}
+
+.h {
+  display:none;
+}
+
+.title-one {
+    margin-top: 0;
+}
+
+
+.text-center {
+    margin-bottom: 0;
+}
+.main {
+    margin-top: 0px;
+}
+
+.fonm p{
+    position: relative;
+    top: 250px;
+    right: 40px;
+    font-size: 8px;
+    line-height: 10px;
+   
+}
+
+.fonm {
+    width: 360px;
+}
+
+#btn1 {
+    margin-bottom: 50px;
+}
+
+
+#progress-bar {
+    text-decoration: none;
+    background: none;  
+    top: 330px;
+    position: relative;   
+}
+
+
+
+#file {
+    background: radial-gradient(100% 100% at 50% 100%, #2B96EA 0%, #0021CD 100%);
+    box-shadow: 0px 10px 30px rgba(0, 33, 205, 0.25);
+    border-radius: 37px;
+}
+
+#inp {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+}
+
+#pdf1 {
+    padding: relative;
+    left: 10px
+}
+
+.title {
+    margin-top: 90px;
+}
+.back {
+    position: relative;
+    right: 60px;
+}
+
+.footguiz {
+    margin-top: 0px;
+}
+
+
+.foot-last {
+    margin-top: 0px;
+}
+ 
+
+   
+}
+@media (max-width: 360px) {
+
+.pt-1 {
+    font-size: 16px ;
+    line-height: 20px;
+}
+
+.fonm .w {
+    width: 300px;
+}
+
+.g {
+    width: 300px;
+}
+
+.title1 {
+    font-size: 15px;
+}
+
+.title2 {  
+    font-size: 20px;
+}
+
+.tel a {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+#foot {   
+    height: 100px;    
+}
+
+#btn1 {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+       
+
+#inp {
+    width: 281px;
+}
+
+
+#btn4 a {
+    font-size: 23px;
+  
+}
+
+
+#btn4 {
+    font-size: 23px;
+    margin-left: 0;
+}
+
+#adress {
+     margin-left: 0;
+}
+
+
+#icon {
+    margin-top: 30px;
+}
+
+#icon img {
+    width: 60px;
+
+}
+
+#icon:first-child  {
+    margin-left: 45px;
+}
+
+#progress-bar {
+    position: relative;
+    top: 393px;
+}
+
+.main {
+     margin-top: 0;
+}
+
+#tit1 {
+  min-width: 300px; 
+  align-items: flex-end; 
+}
+
+#list-2 {
+  margin-left: 0px;
+}
+
+ 
+#btn-back{
+    width: 189px;
+    position: relative;
+    left: 126px;
+    bottom: 173px;
+}
+
+.img-back {
+    position: relative;
+    bottom: 70px;
+    left: 2px;
+}
+
+.img-p-bar {
+    position: relative;
+    bottom: 40px;
+    left: 2px;
+    width: 300px;
+}
+
+.fonm p{
+    position: relative;
+    top: 190px;
+    right: 0px;
+    font-size: 8px;
+    line-height: 10px;
+   
+}
+
+.back {
+   position: relative;
+   right: 26px;
+   bottom: 20px;
+}
+
+#btn-w {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-bottom: 0;
+}
+
+.footguiz {
+    margin-top: 0px;
+}
+
+
+.foot-last {
+    margin-top: 0px;
+}
+ 
+   
+}
+
